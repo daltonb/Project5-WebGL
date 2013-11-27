@@ -268,6 +268,8 @@
 
         gl.uniform3fv(u_CameraSpaceDirLightLocation, lightdir);
 
+        gl.uniform1f(u_timeLocation, time);
+
         gl.activeTexture(gl.TEXTURE0);
         gl.bindTexture(gl.TEXTURE_2D, dayTex);
         gl.uniform1i(u_DayDiffuseLocation, 0);
